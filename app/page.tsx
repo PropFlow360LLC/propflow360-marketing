@@ -1,18 +1,9 @@
 "use client";
 
 export default function Home() {
-  const DEMO_USERS = [
-    { label: "Corporate Admin" },
-    { label: "Regional Manager" },
-    { label: "Property Manager" },
-    { label: "Leasing Agent" },
-    { label: "Maintenance Tech" },
-    { label: "Tenant" },
-    { label: "Vendor" },
-  ];
-
   return (
     <div className="min-h-screen grid md:grid-cols-2">
+
       {/* LEFT SIDE */}
       <div
         className="flex flex-col justify-center text-white p-16"
@@ -22,6 +13,7 @@ export default function Home() {
         }}
       >
         <div className="max-w-xl">
+
           <img src="/logo.png" alt="PropFlow360" className="w-56 mb-10" />
 
           <h1 className="text-5xl font-bold leading-tight">
@@ -42,36 +34,81 @@ export default function Home() {
             <li>✓ Financial dashboards and reporting</li>
             <li>✓ Role-based access for every team member</li>
           </ul>
+
         </div>
       </div>
 
+
       {/* RIGHT SIDE */}
       <div className="flex items-center justify-center p-10 bg-gray-50">
+
         <div className="w-full max-w-md text-center">
+
           <h2 className="text-3xl font-bold text-gray-800 mb-4">
             Explore the Platform
           </h2>
 
           <p className="text-gray-600 mb-8">
-            Use one of the demo roles below to explore how PropFlow360 works for
-            each team member in a property management organization.
+            Select a role below to instantly enter the demo platform and see
+            how PropFlow360 works for different users.
           </p>
 
-          <div className="text-xs text-gray-500 mb-4">
-            Clicking a role will take you to the platform login page.
+
+          {/* DEMO LOGIN BUTTONS */}
+
+          <div className="grid grid-cols-2 gap-3">
+
+            <a
+              href="https://app.propflow360.app/login?email=corporate@demo.com&password=demo123&companySlug=demo"
+              className="border rounded-lg py-3 text-sm hover:bg-gray-100 bg-white"
+            >
+              Corporate Admin
+            </a>
+
+            <a
+              href="https://app.propflow360.app/login?email=regional@demo.com&password=demo123&companySlug=demo"
+              className="border rounded-lg py-3 text-sm hover:bg-gray-100 bg-white"
+            >
+              Regional Manager
+            </a>
+
+            <a
+              href="https://app.propflow360.app/login?email=property@demo.com&password=demo123&companySlug=demo"
+              className="border rounded-lg py-3 text-sm hover:bg-gray-100 bg-white"
+            >
+              Property Manager
+            </a>
+
+            <a
+              href="https://app.propflow360.app/login?email=leasing@demo.com&password=demo123&companySlug=demo"
+              className="border rounded-lg py-3 text-sm hover:bg-gray-100 bg-white"
+            >
+              Leasing Agent
+            </a>
+
+            <a
+              href="https://app.propflow360.app/login?email=tech@demo.com&password=demo123&companySlug=demo"
+              className="border rounded-lg py-3 text-sm hover:bg-gray-100 bg-white"
+            >
+              Maintenance Tech
+            </a>
+
+            <a
+              href="https://app.propflow360.app/login?email=tenant@demo.com&password=demo123&companySlug=demo"
+              className="border rounded-lg py-3 text-sm hover:bg-gray-100 bg-white"
+            >
+              Tenant
+            </a>
+
+            <a
+              href="https://app.propflow360.app/login?email=vendor@demo.com&password=demo123&companySlug=demo"
+              className="border rounded-lg py-3 text-sm hover:bg-gray-100 bg-white"
+            >
+              Vendor
+            </a>
+
           </div>
 
-          <div className="grid grid-cols-2 gap-3 mt-4">
-            {DEMO_USERS.map((role) => (
-              <a
-                key={role.label}
-                href="https://app.propflow360.app/login"
-                className="border rounded-lg py-3 px-3 text-sm hover:bg-gray-100 bg-white"
-              >
-                {role.label}
-              </a>
-            ))}
-          </div>
 
           <div className="mt-10">
             <a
@@ -85,8 +122,11 @@ export default function Home() {
               Go to Platform Login →
             </a>
           </div>
+
         </div>
+
       </div>
+
     </div>
   );
 }
