@@ -1,6 +1,6 @@
 export default function Pricing() {
   return (
-    <section className="py-24 bg-muted/40">
+    <section className="py-24 bg-white">
       <div className="max-w-6xl mx-auto px-6 text-center">
 
         <h2 className="text-3xl font-semibold mb-12">
@@ -12,7 +12,7 @@ export default function Pricing() {
           <div className="border rounded-xl p-8">
             <h3 className="text-xl font-semibold">Starter</h3>
             <p className="text-3xl font-bold mt-4">$99</p>
-            <p className="text-muted-foreground mb-6">per month</p>
+            <p className="text-gray-500 mb-6">per month</p>
 
             <button className="w-full bg-black text-white py-2 rounded">
               Start Demo
@@ -22,7 +22,7 @@ export default function Pricing() {
           <div className="border rounded-xl p-8 shadow-lg">
             <h3 className="text-xl font-semibold">Professional</h3>
             <p className="text-3xl font-bold mt-4">$299</p>
-            <p className="text-muted-foreground mb-6">per month</p>
+            <p className="text-gray-500 mb-6">per month</p>
 
             <button className="w-full bg-black text-white py-2 rounded">
               Start Demo
@@ -32,11 +32,11 @@ export default function Pricing() {
           <div className="border rounded-xl p-8">
             <h3 className="text-xl font-semibold">Enterprise</h3>
             <p className="text-3xl font-bold mt-4">Custom</p>
-            <p className="text-muted-foreground mb-6">
+            <p className="text-gray-500 mb-6">
               Large portfolios
             </p>
 
-            <button className="w-full bg-black text-white py-2 rounded">
+            <button className="w-full border py-2 rounded">
               Contact Sales
             </button>
           </div>

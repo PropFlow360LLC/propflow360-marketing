@@ -15,7 +15,7 @@ const features = [
 
 export default function Features() {
   return (
-    <section className="py-24">
+    <section className="py-24 bg-white">
       <div className="max-w-6xl mx-auto px-6">
 
         <div className="text-center mb-16">
@@ -23,7 +23,7 @@ export default function Features() {
             Everything Needed To Manage Your Portfolio
           </h2>
 
-          <p className="text-muted-foreground mt-3">
+          <p className="text-gray-500 mt-3">
             PropFlow360 combines operations, finance, and asset management
             into one platform.
           </p>
